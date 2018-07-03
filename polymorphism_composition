@@ -4,11 +4,13 @@
 
 1. What does the ___word___ 'polymorphism' mean?
 
-In object-oriented programming, polymorphism refers to a programming language's ability to process objects differently depending on their data type or class. More specifically, it is the ability to redefine methods for derived classes from a base method either on the abstract class or interface in Java.
+In object-oriented programming, polymorphism refers to a programming language's ability to process objects differently depending on their data type or class. More specifically, it is the ability to redefine methods for derived classes from a base method either on the abstract class or interface in Java for example.
 
 2. What does it mean when we apply polymorphism to OO design? Give a simple Java example.
 
-For example, given a base class shape, polymorphism enables the programmer to define different area methods for any number of derived classes, such as circles, rectangles and triangles. No matter what shape an object is, applying the area method to it will return the correct results.
+Polymorphism in OO relates to the ability to link classes to give them shared behaviours/methods.
+
+As an example given a base class shape, polymorphism enables the programmer to define different area methods for any number of derived classes, such as circles, rectangles and triangles. No matter what shape an object is, applying the area method to it will return the correct results.
 
 3. What can we use to implement polymorphism in Java?
 
@@ -16,7 +18,7 @@ Interfaces or Inheritance(abstract classes).
 
 4. How many 'forms' can an object take when using polymorphism?
 
-An unlimited amount for Interfaces but a class can only inherit from one superclass.
+An unlimited amount for Interfaces but a class can only inherit from one other class.
 
 5. Give an example of when you could use polymorphism.
 
@@ -26,7 +28,7 @@ Creating a class system for a video game where different class of character shar
 
 6. What do we mean by 'composition' in reference to object-oriented programming?
 
-Composition means HAS A relationship.The functionality of an object is made up of an aggregate of different classes. In practice, this means holding a pointer to another classes methods that the class can use.
+Composition means HAS A relationship with the class it is in.The functionality of an object is made up of an aggregate of different classes. In practice, this means holding a pointer to another classes methods that the class can use.
 
 7. When would you use composition? Provide a simple example in Java.
 
@@ -36,6 +38,8 @@ Both classes aren't in the same logical domain.
 The subclass isn't a proper subtype of the superclass.
 The superclass’s implementation isn't necessary or appropriate for the subclass.
 The enhancements made by the subclass aren't primarily additive.
+
+An example would be a model of the UK with composite parts being the countries that have their own methods but also have some shared methods based in the interface.
 
 8. What is/are the advantage(s) of using composition?
 
@@ -51,5 +55,6 @@ It is possible to implement "multiple inheritance" in languages which do not sup
 
 There is no conflict between methods/properties names, which might occur with inheritance.
 
-
 9. What happens to the behaviours when the object composed of them is destroyed?
+
+The behaviours that are linked to the object will be lost but the interface method will remain along with any other methods on other classes that implement it.
